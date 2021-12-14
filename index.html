@@ -1,0 +1,3062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="search">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+    <table class="v8-table">
+        <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Default</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td><code>--experimental-extras</code></td>
+            <td>enable code compiled in via v8_experimental_extra_library_files</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-strict</code></td>
+            <td>enforce strict mode</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--es-staging</code></td>
+            <td>enable test-worthy harmony features</td>
+            <td>for internal use only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony</code></td>
+            <td>enable all completed harmony features</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-shipping</code></td>
+            <td>enable all shipped harmony features</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-do-expressions</code></td>
+            <td>enable “harmony do-expressions”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-class-fields</code></td>
+            <td>enable “harmony fields in class literals”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-static-fields</code></td>
+            <td>enable “harmony static fields in class literals”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-await-optimization</code></td>
+            <td>enable “harmony await taking 1 tick”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-locale</code></td>
+            <td>enable “Intl.Locale”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-intl-list-format</code></td>
+            <td>enable “Intl.ListFormat”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-intl-relative-time-format</code></td>
+            <td>enable “Intl.RelativeTimeFormat”</td>
+            <td>in progress</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-public-fields</code></td>
+            <td>enable “harmony public fields in class literals”</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-private-fields</code></td>
+            <td>enable “harmony private fields in class literals”</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-numeric-separator</code></td>
+            <td>enable “harmony numeric separator between digits”</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-string-matchall</code></td>
+            <td>enable “harmony String.prototype.matchAll”</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-global</code></td>
+            <td>enable “harmony global”</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-string-trimming</code></td>
+            <td>enable “harmony String.prototype.trim{Start,End}”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-sharedarraybuffer</code></td>
+            <td>enable “harmony sharedarraybuffer”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-function-tostring</code></td>
+            <td>enable “harmony Function.prototype.toString”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-import-meta</code></td>
+            <td>enable “harmony import.meta property”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-bigint</code></td>
+            <td>enable “harmony arbitrary precision integers”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-dynamic-import</code></td>
+            <td>enable “harmony dynamic import”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-array-prototype-values</code></td>
+            <td>enable “harmony Array.prototype.values”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-array-flat</code></td>
+            <td>enable “harmony Array.prototype.{flat,flatMap}”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--harmony-symbol-description</code></td>
+            <td>enable “harmony Symbol.prototype.description”</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--icu-timezone-data</code></td>
+            <td>get information about timezones from ICU</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--future</code></td>
+            <td>Implies all staged features that we want to ship in the not-too-far future</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--allocation-site-pretenuring</code></td>
+            <td>pretenure with allocation sites</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--page-promotion</code></td>
+            <td>promote pages based on utilization</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--page-promotion-threshold</code></td>
+            <td>min percentage of live bytes on a page to enable fast evacuation</td>
+            <td>int</td>
+            <td>70</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-pretenuring</code></td>
+            <td>trace pretenuring decisions of HAllocate instructions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-pretenuring-statistics</code></td>
+            <td>trace allocation site pretenuring statistics</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-fields</code></td>
+            <td>track fields with only smi values</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-double-fields</code></td>
+            <td>track fields with double values</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-heap-object-fields</code></td>
+            <td>track fields with heap values</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-computed-fields</code></td>
+            <td>track computed boilerplate fields</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-field-types</code></td>
+            <td>track field types</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-block-coverage</code></td>
+            <td>trace collected block coverage information</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--feedback-normalization</code></td>
+            <td>feed back normalization to constructors</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--optimize-for-size</code></td>
+            <td>Enables optimizations which favor memory size over execution speed</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-one-shot-optimization</code></td>
+            <td>Enable size optimizations for the code that will only be executed once</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--unbox-double-arrays</code></td>
+            <td>automatically unbox arrays of doubles</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--interrupt-budget</code></td>
+            <td>interrupt budget which should be used for the profiler counter</td>
+            <td>int</td>
+            <td>147456</td>
+        </tr>
+
+        <tr>
+            <td><code>--ignition-elide-noneffectful-bytecodes</code></td>
+            <td>elide bytecodes which won’t have any external effect</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ignition-reo</code></td>
+            <td>use ignition register equivalence optimizer</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ignition-filter-expression-positions</code></td>
+            <td>filter expression positions before the bytecode pipeline</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ignition-share-named-property-feedback</code></td>
+            <td>share feedback slots when loading the same named property from the same object</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-bytecode</code></td>
+            <td>print bytecode generated by ignition interpreter</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-bytecode-filter</code></td>
+            <td>filter for selecting which functions to print bytecode</td>
+            <td>string</td>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-ignition-codegen</code></td>
+            <td>trace the codegen of ignition interpreter bytecode handlers</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-ignition-dispatches</code></td>
+            <td>traces the dispatches to bytecode handlers by the ignition interpreter</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-ignition-dispatches-output-file</code></td>
+            <td>the file to which the bytecode handler dispatch table is written</td>
+            <td>by default, the table is not written to a file</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--fast-math</code></td>
+            <td>faster</td>
+            <td>but maybe less accurate math functions</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-track-allocation-sites</code></td>
+            <td>trace the tracking of allocation sites</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-migration</code></td>
+            <td>trace object migration</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-generalization</code></td>
+            <td>trace map generalization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-recompilation</code></td>
+            <td>optimizing hot functions asynchronously on a separate thread</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-concurrent-recompilation</code></td>
+            <td>track concurrent recompilation</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-recompilation-queue-length</code></td>
+            <td>the length of the concurrent compilation queue</td>
+            <td>int</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-recompilation-delay</code></td>
+            <td>artificial compilation delay in ms</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--block-concurrent-recompilation</code></td>
+            <td>block queued jobs until released</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-compiler-frontend</code></td>
+            <td>run optimizing compiler’s frontend phases on a separate thread</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--strict-heap-broker</code></td>
+            <td>fail on incomplete serialization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-heap-broker</code></td>
+            <td>trace the heap broker</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-runs</code></td>
+            <td>number of stress runs</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--deopt-every-n-times</code></td>
+            <td>deoptimize every n times a deopt point is passed</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-deopt-stress</code></td>
+            <td>print number of possible deopt points</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-sp-frame-access</code></td>
+            <td>use stack pointer-relative access to frame wherever possible</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-preprocess-ranges</code></td>
+            <td>run pre-register allocation heuristics</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-filter</code></td>
+            <td>optimization filter for TurboFan compiler</td>
+            <td>string</td>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo</code></td>
+            <td>trace generated TurboFan IR</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-path</code></td>
+            <td>directory to dump generated TurboFan IR to</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-filter</code></td>
+            <td>filter for tracing turbofan compilation</td>
+            <td>string</td>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-graph</code></td>
+            <td>trace generated TurboFan graphs</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-scheduled</code></td>
+            <td>trace TurboFan IR with schedule</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-cfg-file</code></td>
+            <td>trace turbo cfg graph</td>
+            <td>for C1 visualizer to a given file name</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-types</code></td>
+            <td>trace TurboFan’s types</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-scheduler</code></td>
+            <td>trace TurboFan’s scheduler</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-reduction</code></td>
+            <td>trace TurboFan’s various reducers</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-trimming</code></td>
+            <td>trace TurboFan’s graph trimmer</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-jt</code></td>
+            <td>trace TurboFan’s jump threading</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-ceq</code></td>
+            <td>trace TurboFan’s control equivalence</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-loop</code></td>
+            <td>trace TurboFan’s loop optimizations</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-alloc</code></td>
+            <td>trace register allocator</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-all-uses</code></td>
+            <td>trace all use positions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-representation</code></td>
+            <td>trace representation types</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-verify</code></td>
+            <td>verify TurboFan graphs at each phase</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-verify-machine-graph</code></td>
+            <td>verify TurboFan machine graph before instruction selection</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-verify-csa</code></td>
+            <td>trace code stubs verification</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--csa-trap-on-node</code></td>
+            <td>trigger break point when a node with given id is created in given stub. The format is: StubName,NodeId
+            </td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-stats</code></td>
+            <td>print TurboFan statistics</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-stats-nvp</code></td>
+            <td>print TurboFan statistics in machine-readable format</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-stats-wasm</code></td>
+            <td>print TurboFan statistics of wasm compilations</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-splitting</code></td>
+            <td>split nodes during scheduling in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--function-context-specialization</code></td>
+            <td>enable function context specialization in TurboFan</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-inlining</code></td>
+            <td>enable inlining in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-inlined-bytecode-size</code></td>
+            <td>maximum size of bytecode for a single inlining</td>
+            <td>int</td>
+            <td>500</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-inlined-bytecode-size-cumulative</code></td>
+            <td>maximum cumulative size of bytecode considered for inlining</td>
+            <td>int</td>
+            <td>1000</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-inlined-bytecode-size-absolute</code></td>
+            <td>maximum cumulative size of bytecode considered for inlining</td>
+            <td>int</td>
+            <td>5000</td>
+        </tr>
+
+        <tr>
+            <td><code>--reserve-inline-budget-scale-factor</code></td>
+            <td>maximum cumulative size of bytecode considered for inlining</td>
+            <td>float</td>
+            <td>1.2</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-inlined-bytecode-size-small</code></td>
+            <td>maximum size of bytecode considered for small function inlining</td>
+            <td>int</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td><code>--min-inlining-frequency</code></td>
+            <td>minimum frequency for inlining</td>
+            <td>float</td>
+            <td>0.15</td>
+        </tr>
+
+        <tr>
+            <td><code>--polymorphic-inlining</code></td>
+            <td>polymorphic inlining</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-inline</code></td>
+            <td>set high thresholds for inlining to inline as much as possible</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-inlining</code></td>
+            <td>trace TurboFan inlining</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--inline-accessors</code></td>
+            <td>inline JavaScript accessors</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--inline-into-try</code></td>
+            <td>inline into try blocks</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-inline-array-builtins</code></td>
+            <td>inline array builtins in TurboFan code</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-osr</code></td>
+            <td>use on-stack replacement</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-osr</code></td>
+            <td>trace on-stack replacement</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--analyze-environment-liveness</code></td>
+            <td>analyze liveness of environment slots and zap dead values</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-environment-liveness</code></td>
+            <td>trace liveness of local variable slots</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-load-elimination</code></td>
+            <td>enable load elimination in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-turbo-load-elimination</code></td>
+            <td>trace TurboFan load elimination</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-profiling</code></td>
+            <td>enable profiling in TurboFan</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-verify-allocation</code></td>
+            <td>verify register allocation in TurboFan</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-move-optimization</code></td>
+            <td>optimize gap moves in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-jt</code></td>
+            <td>enable jump threading in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-loop-peeling</code></td>
+            <td>Turbofan loop peeling</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-loop-variable</code></td>
+            <td>Turbofan loop variable optimization</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-cf-optimization</code></td>
+            <td>optimize control flow in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-escape</code></td>
+            <td>enable escape analysis</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-allocation-folding</code></td>
+            <td>Turbofan allocation folding</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-instruction-scheduling</code></td>
+            <td>enable instruction scheduling in TurboFan</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-stress-instruction-scheduling</code></td>
+            <td>randomly schedule instructions to stress dependency tracking</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-store-elimination</code></td>
+            <td>enable store-store elimination in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-store-elimination</code></td>
+            <td>trace store elimination</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--turbo-rewrite-far-jumps</code></td>
+            <td>rewrite far to near jumps</td>
+            <td>ia32,x64</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-inline-promise-constructor</code></td>
+            <td>inline the Promise constructor in TurboFan</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--untrusted-code-mitigations</code></td>
+            <td>Enable mitigations for executing untrusted code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--branch-load-poisoning</code></td>
+            <td>Mask loads with branch conditions.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--minimal</code></td>
+            <td>simplifies execution model to make porting easier</td>
+            <td>e.g. always use Ignition, never optimize</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-wasm</code></td>
+            <td>expose wasm interface to JavaScript</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--assume-asmjs-origin</code></td>
+            <td>force wasm decoder to assume input is internal asm-wasm format</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-disable-structured-cloning</code></td>
+            <td>disable wasm structured cloning</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-num-compilation-tasks</code></td>
+            <td>number of parallel compilation tasks for wasm</td>
+            <td>int</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-write-protect-code-memory</code></td>
+            <td>write protect code memory on the wasm native heap</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-trace-serialization</code></td>
+            <td>trace serialization/deserialization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-async-compilation</code></td>
+            <td>enable actual asynchronous compilation for WebAssembly.compile</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-test-streaming</code></td>
+            <td>use streaming compilation instead of async compilation for tests</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-max-mem-pages</code></td>
+            <td>maximum number of 64KiB memory pages of a wasm instance</td>
+            <td>uint</td>
+            <td>32767</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-max-table-size</code></td>
+            <td>maximum table size of a wasm instance</td>
+            <td>uint</td>
+            <td>10000000</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-tier-up</code></td>
+            <td>enable wasm baseline compilation and tier up to the optimizing compiler</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-wasm-ast-start</code></td>
+            <td>start function for wasm AST trace</td>
+            <td>inclusive</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-wasm-ast-end</code></td>
+            <td>end function for wasm AST trace</td>
+            <td>exclusive</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--liftoff</code></td>
+            <td>enable Liftoff, the baseline compiler for WebAssembly</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-trace-memory</code></td>
+            <td>print all memory updates performed in wasm code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-tier-mask-for-testing</code></td>
+            <td>bitmask of functions to compile with TurboFan instead of Liftoff</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--validate-asm</code></td>
+            <td>validate asm.js modules before compiling</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--suppress-asm-messages</code></td>
+            <td>don’t emit asm.js related messages</td>
+            <td>for golden file testing</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-asm-time</code></td>
+            <td>log asm.js timing info to the console</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-asm-scanner</code></td>
+            <td>log tokens encountered by asm.js scanner</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-asm-parser</code></td>
+            <td>verbose logging of asm.js parse failures</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-validate-asm</code></td>
+            <td>try to validate everything as asm.js</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--dump-wasm-module-path</code></td>
+            <td>directory to dump wasm modules to</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-mv</code></td>
+            <td>enable prototype multi-value support for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-eh</code></td>
+            <td>enable prototype exception handling opcodes for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-se</code></td>
+            <td>enable prototype sign extension opcodes for wasm</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-sat-f2i-conversions</code></td>
+            <td>enable prototype saturating float conversion opcodes for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-threads</code></td>
+            <td>enable prototype thread opcodes for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-simd</code></td>
+            <td>enable prototype SIMD opcodes for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-anyref</code></td>
+            <td>enable prototype anyref opcodes for wasm</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-wasm-mut-global</code></td>
+            <td>enable prototype import/export mutable global support for wasm</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-opt</code></td>
+            <td>enable wasm optimization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-no-bounds-checks</code></td>
+            <td>disable bounds checks</td>
+            <td>performance testing only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-no-stack-checks</code></td>
+            <td>disable stack checks</td>
+            <td>performance testing only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-shared-engine</code></td>
+            <td>shares one wasm engine between all isolates within a process</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-shared-code</code></td>
+            <td>shares code underlying a wasm module when it is transferred</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-trap-handler</code></td>
+            <td>use signal handlers to catch out of bounds memory access in wasm</td>
+            <td>currently Linux x86_64 only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-trap-handler-fallback</code></td>
+            <td>Use bounds checks if guarded memory is not available</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-fuzzer-gen-test</code></td>
+            <td>Generate a test case when running a wasm fuzzer</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-wasm-code</code></td>
+            <td>Print WebAssembly code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-interpret-all</code></td>
+            <td>Execute all wasm code in the wasm interpreter</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--asm-wasm-lazy-compilation</code></td>
+            <td>enable lazy compilation for asm-wasm modules</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--wasm-lazy-compilation</code></td>
+            <td>enable lazy compilation for all wasm modules</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--frame-count</code></td>
+            <td>number of stack frames inspected by the profiler</td>
+            <td>int</td>
+            <td>1</td>
+        </tr>
+
+        <tr>
+            <td><code>--type-info-threshold</code></td>
+            <td>percentage of ICs that must have type info to allow optimization</td>
+            <td>int</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-sampling-allocation-profiler</code></td>
+            <td>Enables sampling allocation profiler with X as a sample interval</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--min-semi-space-size</code></td>
+            <td>min size of a semi-space</td>
+            <td>in MBytes), the new space consists of two semi-spaces</td>
+            <td>size_t</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-semi-space-size</code></td>
+            <td>max size of a semi-space</td>
+            <td>in MBytes), the new space consists of two semi-spaces</td>
+            <td>size_t</td>
+        </tr>
+
+        <tr>
+            <td><code>--semi-space-growth-factor</code></td>
+            <td>factor by which to grow the new space</td>
+            <td>int</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><code>--experimental-new-space-growth-heuristic</code></td>
+            <td>Grow the new space based on the percentage of survivors instead of their absolute value.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-old-space-size</code></td>
+            <td>max size of the old space</td>
+            <td>in Mbytes</td>
+            <td>size_t</td>
+        </tr>
+
+        <tr>
+            <td><code>--initial-old-space-size</code></td>
+            <td>initial old space size</td>
+            <td>in Mbytes</td>
+            <td>size_t</td>
+        </tr>
+
+        <tr>
+            <td><code>--gc-global</code></td>
+            <td>always perform global GCs</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--random-gc-interval</code></td>
+            <td>Collect garbage after random(0, X allocations. It overrides gc_interval.</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--gc-interval</code></td>
+            <td>garbage collect after
+                <n> allocations</n>
+            </td>
+            <td>int</td>
+            <td>-1</td>
+        </tr>
+
+        <tr>
+            <td><code>--retain-maps-for-n-gc</code></td>
+            <td>keeps maps alive for
+                <n> old space garbage collections</n>
+            </td>
+            <td>int</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-gc</code></td>
+            <td>print one trace line following each garbage collection</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-gc-nvp</code></td>
+            <td>print one detailed trace line in name=value format after each garbage collection</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-gc-ignore-scavenger</code></td>
+            <td>do not print trace line after scavenger collection</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-idle-notification</code></td>
+            <td>print one trace line following each idle notification</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-idle-notification-verbose</code></td>
+            <td>prints the heap state used by the idle notification</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-gc-verbose</code></td>
+            <td>print more details following each garbage collection</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-allocation-stack-interval</code></td>
+            <td>print stack trace after
+                <n> free-list allocations</n>
+            </td>
+            <td>int</td>
+            <td>-1</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-duplicate-threshold-kb</code></td>
+            <td>print duplicate objects in the heap if their size is more than given threshold</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-fragmentation</code></td>
+            <td>report fragmentation for old space</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-fragmentation-verbose</code></td>
+            <td>report fragmentation for old space</td>
+            <td>detailed</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-evacuation</code></td>
+            <td>report evacuation statistics</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-mutator-utilization</code></td>
+            <td>print mutator utilization, allocation speed, gc speed</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--incremental-marking</code></td>
+            <td>use incremental marking</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--incremental-marking-wrappers</code></td>
+            <td>use incremental marking for marking wrappers</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-unmapper</code></td>
+            <td>Trace the unmapping</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--parallel-scavenge</code></td>
+            <td>parallel scavenge</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-parallel-scavenge</code></td>
+            <td>trace parallel scavenge</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--write-protect-code-memory</code></td>
+            <td>write protect code memory</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-marking</code></td>
+            <td>use concurrent marking</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--parallel-marking</code></td>
+            <td>use parallel marking in atomic pause</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ephemeron-fixpoint-iterations</code></td>
+            <td>number of fixpoint iterations it takes to switch to linear ephemeron algorithm</td>
+            <td>int</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-concurrent-marking</code></td>
+            <td>trace concurrent marking</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--black-allocation</code></td>
+            <td>use black allocation</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-store-buffer</code></td>
+            <td>use concurrent store buffer processing</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-sweeping</code></td>
+            <td>use concurrent sweeping</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--parallel-compaction</code></td>
+            <td>use parallel compaction</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--parallel-pointer-update</code></td>
+            <td>use parallel pointer update during compaction</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--detect-ineffective-gcs-near-heap-limit</code></td>
+            <td>trigger out-of-memory failure to avoid GC storm near heap limit</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-incremental-marking</code></td>
+            <td>trace progress of the incremental marking</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-stress-marking</code></td>
+            <td>trace stress marking progress</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-stress-scavenge</code></td>
+            <td>trace stress scavenge progress</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-gc-object-stats</code></td>
+            <td>track object counts and memory usage</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-gc-object-stats</code></td>
+            <td>trace object counts and memory usage</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-zone-stats</code></td>
+            <td>trace zone memory usage</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-retaining-path</code></td>
+            <td>enable support for tracking retaining path</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--concurrent-array-buffer-freeing</code></td>
+            <td>free array buffer allocations on a background thread</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--gc-stats</code></td>
+            <td>Used by tracing internally to enable gc statistics</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--track-detached-contexts</code></td>
+            <td>track native contexts that are expected to be garbage collected</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-detached-contexts</code></td>
+            <td>trace native contexts that are expected to be garbage collected</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--move-object-start</code></td>
+            <td>enable moving of object starts</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--memory-reducer</code></td>
+            <td>use memory reducer</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--heap-growing-percent</code></td>
+            <td>specifies heap growing factor as</td>
+            <td>1 + heap_growing_percent/100</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--v8-os-page-size</code></td>
+            <td>override OS page size</td>
+            <td>in KBytes</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--always-compact</code></td>
+            <td>Perform compaction on every full GC</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--never-compact</code></td>
+            <td>Never perform compaction on full GC - testing only</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--compact-code-space</code></td>
+            <td>Compact code space on full collections</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-marking-progress-bar</code></td>
+            <td>Use a progress bar to scan large objects in increments when incremental marking is active.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--force-marking-deque-overflows</code></td>
+            <td>force overflows of marking deque by reducing it’s size to 64 words</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-compaction</code></td>
+            <td>stress the GC compactor to flush out bugs</td>
+            <td>implies –force_marking_deque_overflows</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-compaction-random</code></td>
+            <td>Stress GC compaction by selecting random percent of pages as evacuation candidates. It overrides
+                stress_compaction.
+            </td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-incremental-marking</code></td>
+            <td>force incremental marking for small heaps and run it more often</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--fuzzer-gc-analysis</code></td>
+            <td>prints number of allocations and enables analysis mode for gc fuzz testing, e.g. –stress-marking,
+                –stress-scavenge
+            </td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-marking</code></td>
+            <td>force marking at random points between 0 and X</td>
+            <td>inclusive percent of the regular marking start limit</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--stress-scavenge</code></td>
+            <td>force scavenge at random points between 0 and X</td>
+            <td>inclusive percent of the new space capacity</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--disable-abortjs</code></td>
+            <td>disables AbortJS runtime function</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--manual-evacuation-candidates-selection</code></td>
+            <td>Test mode only flag. It allows an unit test to select evacuation candidates pages</td>
+            <td>requires –stress_compaction).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--fast-promotion-new-space</code></td>
+            <td>fast promote new space on high survival rates</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--clear-free-memory</code></td>
+            <td>initialize free memory with 0</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--young-generation-large-objects</code></td>
+            <td>allocates large objects by default in the young generation large object space</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--debug-code</code></td>
+            <td>generate extra code</td>
+            <td>assertions for debugging</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--code-comments</code></td>
+            <td>emit comments in code disassembly; for more readable source positions you should add
+                –no-concurrent_recompilation
+            </td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-sse3</code></td>
+            <td>enable use of SSE3 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-ssse3</code></td>
+            <td>enable use of SSSE3 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-sse4-1</code></td>
+            <td>enable use of SSE4.1 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-sahf</code></td>
+            <td>enable use of SAHF instruction if available</td>
+            <td>X64 only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-avx</code></td>
+            <td>enable use of AVX instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-fma3</code></td>
+            <td>enable use of FMA3 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-bmi1</code></td>
+            <td>enable use of BMI1 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-bmi2</code></td>
+            <td>enable use of BMI2 instructions if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-lzcnt</code></td>
+            <td>enable use of LZCNT instruction if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-popcnt</code></td>
+            <td>enable use of POPCNT instruction if available</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--arm-arch</code></td>
+            <td>generate instructions for the selected ARM architecture if available: armv6, armv7, armv7+sudiv or
+                armv8
+            </td>
+            <td>string</td>
+            <td>armv8</td>
+        </tr>
+
+        <tr>
+            <td><code>--force-long-branches</code></td>
+            <td>force all emitted branches to be in long mode</td>
+            <td>MIPS/PPC only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--mcpu</code></td>
+            <td>enable optimization for specific cpu</td>
+            <td>string</td>
+            <td>auto</td>
+        </tr>
+
+        <tr>
+            <td><code>--partial-constant-pool</code></td>
+            <td>enable use of partial constant pools</td>
+            <td>X64 only</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-armv7</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-vfp3</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-32dregs</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-neon</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-sudiv</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-armv8</code></td>
+            <td>deprecated</td>
+            <td>use –arm_arch instead</td>
+            <td>maybe_bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-regexp-unaligned-accesses</code></td>
+            <td>enable unaligned accesses for the regexp engine</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--script-streaming</code></td>
+            <td>enable parsing on background</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--disable-old-api-accessors</code></td>
+            <td>Disable old-style API accessors whose setters trigger through the prototype chain</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-natives-as</code></td>
+            <td>expose natives in global object</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-free-buffer</code></td>
+            <td>expose freeBuffer extension</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-gc</code></td>
+            <td>expose gc extension</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-gc-as</code></td>
+            <td>expose gc extension under the specified name</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-externalize-string</code></td>
+            <td>expose externalize string extension</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-trigger-failure</code></td>
+            <td>expose trigger-failure extension</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stack-trace-limit</code></td>
+            <td>number of stack frames to capture</td>
+            <td>int</td>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <td><code>--builtins-in-stack-traces</code></td>
+            <td>show built-in functions in stack traces</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--enable-experimental-builtins</code></td>
+            <td>enable new csa-based experimental builtins</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--disallow-code-generation-from-strings</code></td>
+            <td>disallow eval and friends</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-async-hooks</code></td>
+            <td>expose async_hooks object</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--allow-unsafe-function-constructor</code></td>
+            <td>allow invoking the function constructor without security checks</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--force-slow-path</code></td>
+            <td>always take the slow path for builtins</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--inline-new</code></td>
+            <td>use fast inline allocation</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace</code></td>
+            <td>trace function calls</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--lazy</code></td>
+            <td>use lazy compilation</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-opt</code></td>
+            <td>trace lazy optimization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-opt-verbose</code></td>
+            <td>extra verbose compilation tracing</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-opt-stats</code></td>
+            <td>trace lazy optimization statistics</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-deopt</code></td>
+            <td>trace optimize function deoptimization</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-file-names</code></td>
+            <td>include file names in trace-opt/trace-deopt output</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-interrupts</code></td>
+            <td>trace interrupts when they are handled</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--opt</code></td>
+            <td>use adaptive optimizations</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--always-opt</code></td>
+            <td>always try to optimize functions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--always-osr</code></td>
+            <td>always try to OSR functions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--prepare-always-opt</code></td>
+            <td>prepare for turning on always opt</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-serializer</code></td>
+            <td>print code serializer trace</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--compilation-cache</code></td>
+            <td>enable compilation cache</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--cache-prototype-transitions</code></td>
+            <td>cache prototype transitions</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--compiler-dispatcher</code></td>
+            <td>enable compiler dispatcher</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-compiler-dispatcher</code></td>
+            <td>trace compiler dispatcher activity</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-compiler-dispatcher-jobs</code></td>
+            <td>trace progress of individual jobs managed by the compiler dispatcher</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--cpu-profiler-sampling-interval</code></td>
+            <td>CPU profiler sampling interval in microseconds</td>
+            <td>int</td>
+            <td>1000</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-js-array-abuse</code></td>
+            <td>trace out-of-bounds accesses to JS arrays</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-external-array-abuse</code></td>
+            <td>trace out-of-bounds-accesses to external arrays</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-array-abuse</code></td>
+            <td>trace out-of-bounds accesses to all arrays</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-side-effect-free-debug-evaluate</code></td>
+            <td>print debug messages for side-effect-free debug-evaluate for testing</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--hard-abort</code></td>
+            <td>abort by crashing</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--expose-inspector-scripts</code></td>
+            <td>expose injected-script-source.js for debugging</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stack-size</code></td>
+            <td>default size of stack region v8 is allowed to use</td>
+            <td>in kBytes</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--max-stack-trace-source-length</code></td>
+            <td>maximum length of function source code printed in a stack trace.</td>
+            <td>int</td>
+            <td>300</td>
+        </tr>
+
+        <tr>
+            <td><code>--clear-exceptions-on-js-entry</code></td>
+            <td>clear pending exceptions when entering JavaScript</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--histogram-interval</code></td>
+            <td>time interval in ms for aggregating memory histograms</td>
+            <td>int</td>
+            <td>600000</td>
+        </tr>
+
+        <tr>
+            <td><code>--heap-profiler-trace-objects</code></td>
+            <td>Dump heap object allocations/movements/size_updates</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--heap-profiler-use-embedder-graph</code></td>
+            <td>Use the new EmbedderGraph API to get embedder nodes</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--heap-snapshot-string-limit</code></td>
+            <td>truncate strings to this length in the heap snapshot</td>
+            <td>int</td>
+            <td>1024</td>
+        </tr>
+
+        <tr>
+            <td><code>--sampling-heap-profiler-suppress-randomness</code></td>
+            <td>Use constant sample intervals to eliminate test flakiness</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-idle-notification</code></td>
+            <td>Use idle notification to reduce memory footprint.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-ic</code></td>
+            <td>use inline caching</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-ic</code></td>
+            <td>trace inline cache state transitions for tools/ic-processor</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--ic-stats</code></td>
+            <td>inline cache state transitions statistics</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--native-code-counters</code></td>
+            <td>generate extra code for manipulating stats counters</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--thin-strings</code></td>
+            <td>Enable ThinString support</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-prototype-users</code></td>
+            <td>Trace updates to prototype user tracking</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-verbose-printer</code></td>
+            <td>allows verbose printing</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-for-in-enumerate</code></td>
+            <td>Trace for-in enumerate slow-paths</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-maps</code></td>
+            <td>trace map creation</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-maps-details</code></td>
+            <td>also log map details</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--allow-natives-syntax</code></td>
+            <td>allow natives syntax</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--lazy-inner-functions</code></td>
+            <td>enable lazy parsing inner functions</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--aggressive-lazy-inner-functions</code></td>
+            <td>even lazier inner function parsing</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--preparser-scope-analysis</code></td>
+            <td>perform scope analysis for preparsed inner functions</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-sim</code></td>
+            <td>Trace simulator execution</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--debug-sim</code></td>
+            <td>Enable debugging the simulator</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--check-icache</code></td>
+            <td>Check icache flushes in ARM and MIPS simulator</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stop-sim-at</code></td>
+            <td>Simulator stop after x number of instructions</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--sim-stack-alignment</code></td>
+            <td>Stack alingment in bytes in simulator</td>
+            <td>4 or 8, 8 is default</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--sim-stack-size</code></td>
+            <td>Stack size of the ARM64, MIPS64 and PPC64 simulator in kBytes</td>
+            <td>default is 2 MB</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-colour</code></td>
+            <td>When logging, try to use coloured output.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ignore-asm-unimplemented-break</code></td>
+            <td>Don’t break for ASM_UNIMPLEMENTED_BREAK macros.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-sim-messages</code></td>
+            <td>Trace simulator debug messages. Implied by –trace-sim.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--stack-trace-on-illegal</code></td>
+            <td>print stack trace when an illegal exception is thrown</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--abort-on-uncaught-exception</code></td>
+            <td>abort program</td>
+            <td>dump core when an uncaught exception is thrown</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--abort-on-stack-or-string-length-overflow</code></td>
+            <td>Abort program when the stack overflows or a string exceeds maximum length</td>
+            <td>as opposed to throwing RangeError). This is useful for fu<code>zzing where the spec behaviour would
+                introduce nondeterminism.</code></td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--randomize-hashes</code></td>
+            <td>randomize hashes to avoid predictable hash collisions</td>
+            <td>with snapshots this option cannot override the baked-in seed</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--rehash-snapshot</code></td>
+            <td>rehash strings from the snapshot to override the baked-in seed</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--hash-seed</code></td>
+            <td>Fixed seed to use to hash property keys</td>
+            <td>0 means random)(with snapshots this option cannot override the baked-in seed</td>
+            <td>uint64</td>
+        </tr>
+
+        <tr>
+            <td><code>--random-seed</code></td>
+            <td>Default seed for initializing random generator</td>
+            <td>0, the default, means to use system random).</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--fuzzer-random-seed</code></td>
+            <td>Default seed for initializing fuzzer random generator</td>
+            <td>0, the default, means to use v8’s random number generator seed).</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-rail</code></td>
+            <td>trace RAIL mode</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-all-exceptions</code></td>
+            <td>print exception object and stack trace on each thrown exception</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--runtime-call-stats</code></td>
+            <td>report runtime call counts and times</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--runtime-stats</code></td>
+            <td>internal usage only for controlling runtime statistics</td>
+            <td>int</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-embedded-builtin-candidates</code></td>
+            <td>Prints builtins that are not yet embedded but could be.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--lazy-deserialization</code></td>
+            <td>Deserialize code lazily from the snapshot.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--lazy-handler-deserialization</code></td>
+            <td>Deserialize bytecode handlers lazily from the snapshot.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-lazy-deserialization</code></td>
+            <td>Trace lazy deserialization.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--profile-deserialization</code></td>
+            <td>Print the time it takes to deserialize the snapshot.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--serialization-statistics</code></td>
+            <td>Collect statistics on serialized objects.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--serialization-chunk-size</code></td>
+            <td>Custom size for serialization chunks</td>
+            <td>uint</td>
+            <td>4096</td>
+        </tr>
+
+        <tr>
+            <td><code>--regexp-optimization</code></td>
+            <td>generate optimized regexp code</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--regexp-mode-modifiers</code></td>
+            <td>enable inline flags in regexp.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-bool-flag</code></td>
+            <td>testing_bool_flag</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-maybe-bool-flag</code></td>
+            <td>testing_maybe_bool_flag</td>
+            <td>maybe_bool</td>
+            <td>unset</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-int-flag</code></td>
+            <td>testing_int_flag</td>
+            <td>int</td>
+            <td>13</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-float-flag</code></td>
+            <td>float-flag</td>
+            <td>float</td>
+            <td>2.5</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-string-flag</code></td>
+            <td>string-flag</td>
+            <td>string</td>
+            <td>Hello, world!</td>
+        </tr>
+
+        <tr>
+            <td><code>--testing-prng-seed</code></td>
+            <td>Seed used for threading test randomness</td>
+            <td>int</td>
+            <td>42</td>
+        </tr>
+
+        <tr>
+            <td><code>--embedded-src</code></td>
+            <td>Path for the generated embedded data file.</td>
+            <td>mksnapshot only</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--embedded-variant</code></td>
+            <td>Label to disambiguate symbols in embedded data file.</td>
+            <td>mksnapshot only</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--startup-src</code></td>
+            <td>Write V8 startup as C++ src.</td>
+            <td>mksnapshot only</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--startup-blob</code></td>
+            <td>Write V8 startup blob file.</td>
+            <td>mksnapshot only</td>
+            <td>string</td>
+        </tr>
+
+        <tr>
+            <td><code>--help</code></td>
+            <td>Print usage message, including flags, on console</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--dump-counters</code></td>
+            <td>Dump counters on exit</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--dump-counters-nvp</code></td>
+            <td>Dump counters as name-value pairs on exit</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--use-external-strings</code></td>
+            <td>Use external strings for source code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--map-counters</code></td>
+            <td>Map counters to a file</td>
+            <td>string</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><code>--js-arguments</code></td>
+            <td>Pass all remaining arguments to the script. Alias for “–”.</td>
+            <td>arguments</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><code>--mock-arraybuffer-allocator</code></td>
+            <td>Use a mock ArrayBuffer allocator for testing.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log</code></td>
+            <td>Minimal logging</td>
+            <td>no API, code, GC, suspect, or handles samples).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-all</code></td>
+            <td>Log all events to the log file.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-api</code></td>
+            <td>Log API events to the log file.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-code</code></td>
+            <td>Log code events to the log file without profiling.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-handles</code></td>
+            <td>Log global handle events.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-suspect</code></td>
+            <td>Log suspect operations.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-source-code</code></td>
+            <td>Log source code.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-function-events</code></td>
+            <td>Log function events</td>
+            <td>parse, compile, execute separately.</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--prof</code></td>
+            <td>Log statistical profiling information</td>
+            <td>implies –log-code).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--detailed-line-info</code></td>
+            <td>Always generate detailed line information for CPU profiling.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--prof-sampling-interval</code></td>
+            <td>Interval for –prof samples</td>
+            <td>in microseconds).</td>
+            <td>int</td>
+        </tr>
+
+        <tr>
+            <td><code>--prof-cpp</code></td>
+            <td>Like –prof, but ignore generated code.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--prof-browser-mode</code></td>
+            <td>Used with –prof, turns on browser-compatible mode for profiling.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--logfile</code></td>
+            <td>Specify the name of the log file.</td>
+            <td>string</td>
+            <td>v8.log</td>
+        </tr>
+
+        <tr>
+            <td><code>--logfile-per-isolate</code></td>
+            <td>Separate log files for each isolate.</td>
+            <td>bool</td>
+            <td>true</td>
+        </tr>
+
+        <tr>
+            <td><code>--ll-prof</code></td>
+            <td>Enable low-level linux profiler.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--interpreted-frames-native-stack</code></td>
+            <td>Show interpreted frames on the native stack</td>
+            <td>useful for external profilers).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--perf-basic-prof</code></td>
+            <td>Enable perf linux profiler</td>
+            <td>basic support).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--perf-basic-prof-only-functions</code></td>
+            <td>Only report function code ranges to perf</td>
+            <td>i.e. no stubs).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--perf-prof</code></td>
+            <td>Enable perf linux profiler</td>
+            <td>experimental annotate support).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--perf-prof-unwinding-info</code></td>
+            <td>Enable unwinding info for perf linux profiler</td>
+            <td>experimental).</td>
+            <td>bool</td>
+        </tr>
+
+        <tr>
+            <td><code>--gc-fake-mmap</code></td>
+            <td>Specify the name of the file for fake gc mmap used in ll_prof</td>
+            <td>string</td>
+            <td>/tmp/<strong>v8_gc</strong></td>
+        </tr>
+
+        <tr>
+            <td><code>--log-internal-timer-events</code></td>
+            <td>Time internal events.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-timer-events</code></td>
+            <td>Time events including external callbacks.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-instruction-stats</code></td>
+            <td>Log AArch64 instruction statistics.</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-instruction-file</code></td>
+            <td>AArch64 instruction statistics log file.</td>
+            <td>string</td>
+            <td>arm64_inst.csv</td>
+        </tr>
+
+        <tr>
+            <td><code>--log-instruction-period</code></td>
+            <td>AArch64 instruction statistics logging period.</td>
+            <td>int</td>
+            <td>4194304</td>
+        </tr>
+
+        <tr>
+            <td><code>--redirect-code-traces</code></td>
+            <td>output deopt information and disassembly into file code-
+                <pid>-
+                    <isolate id="">.asm</isolate>
+                </pid>
+            </td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--redirect-code-traces-to</code></td>
+            <td>output deopt information and disassembly into the given file</td>
+            <td>string</td>
+            <td>nullptr</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-opt-source</code></td>
+            <td>print source code of optimized and inlined functions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-elements-transitions</code></td>
+            <td>trace elements transitions</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--trace-creation-allocation-sites</code></td>
+            <td>trace the creation of allocation sites</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-code-stubs</code></td>
+            <td>print code stubs</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--test-secondary-stub-cache</code></td>
+            <td>test secondary stub cache by disabling the primary one</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--test-primary-stub-cache</code></td>
+            <td>test primary stub cache by disabling the secondary one</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--test-small-max-function-context-stub-size</code></td>
+            <td>enable testing the function context size overflow path by making the maximum size smaller</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-code</code></td>
+            <td>print generated code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-opt-code</code></td>
+            <td>print optimized code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-opt-code-filter</code></td>
+            <td>filter for printing optimized code</td>
+            <td>string</td>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-code-verbose</code></td>
+            <td>print more information for code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-builtin-code</code></td>
+            <td>print generated code for builtins</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-builtin-code-filter</code></td>
+            <td>filter for printing builtin code</td>
+            <td>string</td>
+            <td>*</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-builtin-size</code></td>
+            <td>print code size for builtins</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--sodium</code></td>
+            <td>print generated code output suitable for use with the Sodium code viewer</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--print-all-code</code></td>
+            <td>enable all flags related to printing code</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--predictable</code></td>
+            <td>enable predictable mode</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--single-threaded</code></td>
+            <td>disable the use of background tasks</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+
+        <tr>
+            <td><code>--single-threaded-gc</code></td>
+            <td>disable the use of background gc tasks</td>
+            <td>bool</td>
+            <td>false</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
